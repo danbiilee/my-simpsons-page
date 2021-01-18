@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원목록</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <style>
+    html{background: white; font-family: 'Noto Sans KR', sans-serif;}
+    body{background: white; padding: 30px; text-align: center;}
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        addList();
+    });
+    function addList(){
+        const ldbMembers = JSON.parse(localStorage.getItem("ldbMembers"));
+        const tbody = document.querySelector("tbody");
+        
+        ldbMembers.forEach(function(item){
+            const name = item['userName'];
+            const email = item['email'];
+
+            const nameNode = document.createTextNode(name);
+            const emailNode = document.createTextNode(email);
+            const tr = document.createElement("tr");
+            const tdName = document.createElement("td");
+            const tdEmail = document.createElement("td");
+
+            tdName.appendChild(nameNode);
+            tdEmail.appendChild(emailNode);
+            tr.appendChild(tdName);
+            tr.appendChild(tdEmail);
+            tbody.appendChild(tr);
+        });
+    }
+    </script>
+</head>
+<body>
+    <div id="showlist">
+        <h1>회원목록</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>아이디</th>
+                </tr>
+            </thead>
+            <tbody> 
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
