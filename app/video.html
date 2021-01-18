@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>VIDEO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Saira&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/video.js"></script>
+</head>
+<body>
+    <div id="wrapper" class="video">
+        @@include("include/header_nav.html")
+        @@include("include/header.html", {"header": "WATCH THE EPISODES"})
+        @@include("include/submenu.html")
+        <!-- loaded video -->
+        <div class="grid-container">
+            <div id="video-title" class="cell">
+                <select name="select-epi" id="select-epi">
+                    <option value="s31e5">SEASON 31 EPISODE 5</option>
+                    <option value="s31e6">SEASON 31 EPISODE 6</option>
+                    <option value="s31e7">SEASON 31 EPISODE 7</option>
+                </select>
+                <button type="button" id="btn-like"></button>
+            </div>
+            <div id="video-loaded" class="cell">
+                    <iframe width='100%' height='100%' src='https://www.youtube.com/embed/NdOa6EvKxSg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+            </div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+        </div>
+        <!-- play list -->
+        <div class="grid-container">
+            <div id="play-list" class="cell">
+                <div id="s31e5" class="pager-container">
+                    <ul id="bx-pager">
+                        <li data-slide-index="0">
+                            <img src="https://i.ytimg.com/vi/" class="thumb" alt="SEASON 31 EPISODE 5 PART1">
+                            <button type="button" class="btn-hover"></button>
+                        </li>
+                        <li data-slide-index="1">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"></button>
+                        </li>
+                        <li data-slide-index="2">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"></button>
+                        </li>
+                        <li data-slide-index="3">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"></button>
+                        </li>
+                        <li data-slide-index="4">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"></button>
+                        </li>
+                        <li data-slide-index="5">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="s31e6" class="pager-container">
+                    <ul id="bx-pager">
+                        <li data-slide-index="0">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="1">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="2">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="3">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="4">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="5">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="s31e7" class="pager-container">
+                    <ul id="bx-pager">
+                        <li data-slide-index="0">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="1">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="2">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="3">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="4">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="5">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                        <li data-slide-index="6">
+                            <img src="https://i.ytimg.com/vi/" class="thumb">
+                            <button type="button" class="btn-hover"><img src="images/ico_check.png" alt="선택"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+        </div>
+        @@include("include/footer.html")
+    </div>
+</body>
+</html>

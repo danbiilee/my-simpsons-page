@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>BART SIMPSON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Saira&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div id="wrapper" class="bart">
+            @@include("include/header_nav.html")
+            @@include("include/header.html", {"header": "BART SIMPSON"})
+            @@include("include/submenu.html")
+            @@include("include/content.html", {
+                "birth": "1980년 4월 1일",
+                "spec": "키 약 120cm, RH-O형",
+                "familly1": {
+                    "th": "부모",
+                    "td": "<p><a href=\"homer.html\">아빠 호머 심슨</a></p><p><a href=\"marge.html\">엄마 마지 심슨</a></p>"
+                },
+                "familly2": {
+                    "th": "형제",
+                    "td": "<p><a href=\"lisa.html\">첫째 여동생 리사 심슨</a></p><p><a href=\"maggie.html\">둘째 여동생 매기 심슨</a></p>"
+                },
+                "like": "광대 크러스티, 장난, 스케이트 보드",
+                "dislike": "공부, 리사와 싸우는 것, 시모어 스키너, 짐보 패거리",
+                "remark": "<p>풀 네임은 바톨로뮤 조조 심슨(Bartholomew Jojo Simpson).</p><p>1998년 6월 8일, TIME지 선정 20세기 가장 영향력 있는 인물 100인에 선정.</p><p>머리에 있는 가시는 공식적으로 9개이다.</p>"
+            })
+            @@include("include/footer.html")
+    </div>
+</body>
+</html>

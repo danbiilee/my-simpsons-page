@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>LISA SIMPSON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Saira&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div id="wrapper" class="lisa">
+            @@include("include/header_nav.html")
+            @@include("include/header.html", {"header": "LISA SIMPSON"})
+            @@include("include/submenu.html")
+            @@include("include/content.html", {
+                "birth": "1983년 5월 9일",
+                "spec": "키 약 137cm, IQ 159",
+                "familly1": {
+                    "th": "부모",
+                    "td": "<p><a href=\"homer.html\">부 호머 심슨</a></p><p><a href=\"marge.html\">모 마지 심슨</a></p>"
+                },
+                "familly2": {
+                    "th": "형제",
+                    "td": "<p><a href=\"bart.html\">오빠 바트 심슨</a></p><p><a href=\"maggie.html\">여동생 매기 심슨</a></p>"
+                },
+                "like": "평화, 공부, 조랑말, 색소폰, 음악",
+                "dislike": "성차별, 바트와 호머의 장난이나 철없는 행동, 바트와 싸우는 것",
+                "remark": "채식주의자, 불교 신자, 티베트 독립운동 지지, 페미니스트"
+            })
+            @@include("include/footer.html")
+    </div>
+</body>
+</html>
